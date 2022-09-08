@@ -31,7 +31,7 @@ class Expense(
 
     //Category reference.
     @ManyToOne
-    @JoinColumn(name = "categoryID", insertable = false, updatable = false,)
+    @JoinColumn(name = "categoryID", insertable = false, updatable = false)
     var category: Category? = null,
 
     //Date Created.
@@ -40,5 +40,4 @@ class Expense(
 
     //Date Modified.
     @Column(name = "dateModified", nullable = true)
-    var dateModified: LocalDateTime? = LocalDateTime.now()){
-}
+    var dateModified: LocalDateTime? = LocalDateTime.now())

@@ -33,5 +33,4 @@ class Category(
 
     //Date Modified.
     @Column(name = "dateModified", nullable = true)
-    var dateModified: LocalDateTime = LocalDateTime.now()) {
-}
+    var dateModified: LocalDateTime = LocalDateTime.now())

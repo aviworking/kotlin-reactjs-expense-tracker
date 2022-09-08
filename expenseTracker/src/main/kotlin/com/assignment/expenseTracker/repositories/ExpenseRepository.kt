@@ -8,5 +8,4 @@ import org.springframework.stereotype.Repository
 Expense Repository.
  */
 @Repository
-interface ExpenseRepository : JpaRepository<Expense, Int> {
-}
+interface ExpenseRepository : JpaRepository<Expense, Int>

@@ -4,7 +4,6 @@ import com.assignment.expenseTracker.entities.Expense
 import com.assignment.expenseTracker.repositories.CategoryRepository
 import com.assignment.expenseTracker.repositories.ExpenseRepository
 import com.assignment.expenseTracker.utilities.ErrorConstant
-import com.assignment.expenseTracker.utilities.RouteConstants
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
