@@ -29,7 +29,7 @@ class Expense(
     @Column(name = "categoryID")
     var categoryID: Int,
 
-    //Category reference definition used to reference the Category Entity received from the CategoryID.
+    //Category reference.
     @ManyToOne
     @JoinColumn(name = "categoryID", insertable = false, updatable = false,)
     var category: Category? = null,
