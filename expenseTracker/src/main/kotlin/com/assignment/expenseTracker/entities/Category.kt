@@ -27,10 +27,4 @@ class Category(
     @JoinColumn(name = "categoryID")
     var expenses : MutableList<Expense> = mutableListOf<Expense>(),
 
-    //Date Created.
-    @Column(name = "dateCreated", nullable = true)
-    var dateCreated: LocalDateTime = LocalDateTime.now(),
-
-    //Date Modified.
-    @Column(name = "dateModified", nullable = true)
-    var dateModified: LocalDateTime = LocalDateTime.now())
+): BaseEntity()
