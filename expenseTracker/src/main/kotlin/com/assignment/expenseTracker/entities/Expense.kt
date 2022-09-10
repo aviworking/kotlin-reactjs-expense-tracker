@@ -31,14 +31,6 @@ class Expense(
 
     //Category reference.
     @ManyToOne
-    @JoinColumn(name = "categoryID", insertable = false, updatable = false,)
-    var category: Category? = null,
-
-    //Date Created.
-    @Column(name = "dateCreated", nullable = true)
-    val dateCreated: LocalDateTime = LocalDateTime.now(),
-
-    //Date Modified.
-    @Column(name = "dateModified", nullable = true)
-    var dateModified: LocalDateTime? = LocalDateTime.now()){
-}
+    @JoinColumn(name = "categoryID", insertable = false, updatable = false)
+    var category: Category? = null
+) : BaseEntity()

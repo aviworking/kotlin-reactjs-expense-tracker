@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const GET_EXPENSES_URL = "http://localhost:8080/api/expense-tracker/expenses";
+
 const CREATE_EXPENSES_URL =
   "http://localhost:8080/api/expense-tracker/expenses/create";
 
